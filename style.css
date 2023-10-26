@@ -1,0 +1,264 @@
+/* #region general style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.container,
+main {
+    /* background-color: rgba(90, 186, 16, 0.542); */
+    /* max-width: 900px; */
+    /* max-width: 50vw; */
+    /* max-width: 50%; */
+    max-width: 50rem;
+    margin-inline: auto;
+}
+
+main {
+    /* background-color: rgb(4, 26, 71); */
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
+        -30px 0px 40px rgb(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2 {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* #endregion */
+
+/* #region specific style */
+/* #region landing area */
+
+#landing {
+    background-color: #fff;
+}
+
+/* #region lading-text */
+#lading-text {
+    /* background-color: #c72424; */
+    height: 50vh;
+    position: relative;
+}
+
+#lading-text .landing-text-inner {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: calc(-150px / 2) calc(-354.969px / 2);
+    text-align: center;
+}
+
+#landing .landing-text-inner h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+#landing .landing-text-inner h2 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #888;
+}
+
+.btn {
+    /* background: teal; */
+
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+    border: 1px #ccc solid;
+    border-radius: 50px;
+
+    color: #333;
+    text-transform: capitalize;
+
+    font-weight: 500;
+    transition: 0.4s background ease;
+}
+
+.btn:hover {
+    background-color: #f4f4f4;
+}
+
+/* #endregion */
+
+/* #region lading-image */
+#lading-image {
+    height: 50vh;
+    background-image: url(https://source.unsplash.com/De8wMYoSSBc);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 10%;
+}
+
+/* #endregion */
+/* #endregion */
+
+/* #region work area */
+
+/* #region header */
+#header {
+    background-color: #333;
+    text-align: center;
+    padding: 1.5rem;
+
+}
+
+#header h2 {
+    /* background-color: #5a0808; */
+    display: inline-block;
+    padding-inline: 1rem;
+
+    color: #fff;
+    border-inline: dotted 1px #fff;
+    text-transform: capitalize;
+}
+
+/* #endregion */
+
+/* #region figures */
+#images figcaption {
+    padding: 0.5rem 1.7rem 3rem;
+    text-align: center;
+    position: relative;
+
+}
+
+#images figcaption h3 {
+    /* background-color: #fff; */
+    padding-block: 1rem;
+    text-transform: capitalize;
+}
+
+#images p::before {
+    content: "";
+    width: 50%;
+    height: 1px;
+    background: #00000089;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    margin-left: -25%;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region footer */
+#footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #333;
+}
+
+#footer h2 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+#footer p {
+    margin-block: 0.8rem;
+}
+
+/* #endregion */
+/* #endregion */
+
+/* #region media queries */
+@media (min-width: 860px) {
+    * {
+        font-size: 19px;
+    }
+
+    .container,
+    main {
+        max-width: 60rem;
+        /* text-align: left; */
+    }
+
+    /* #region landing area */
+    /* #region lading-text */
+    #landing {
+        /* background-color: tan; */
+        display: flow-root;
+    }
+
+    #lading-text {
+        /* position: static; */
+        display: inline-block;
+        width: 40%;
+        background: #d00606;
+        height: fit-content;
+    }
+
+    #lading-text .landing-text-inner {
+        /* position: static; */
+        top: 50vh;
+        left: 25px;
+        margin: -15vh 0;
+        text-align: center;
+
+    }
+
+    #lading-text .landing-text-inner h1 {
+        width: 80%;
+        margin: auto;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    figcaption h3,
+    h2 {
+        font-size: 30px;
+    }
+
+    figcaption p {
+        font-size: 25px;
+    }
+
+    /* #endregion */
+
+    /* #region lading-image */
+    #lading-image {
+        display: inline-block;
+        float: right;
+        height: 100vh;
+        width: 56%;
+        vertical-align: middle;
+    }
+
+    /* #endregion */
+    /* #endregion */
+}
+
+
+/* #endregion */
+
+/* 
+
+
+*/
